@@ -17,7 +17,7 @@ namespace ScaleCalculator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboBox1.SelectedIndex = 1;
+            //comboBox1.SelectedIndex = 1;
         }
 
         private void valueBox_TextChanged(object sender, EventArgs e)
