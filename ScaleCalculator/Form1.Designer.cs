@@ -49,7 +49,7 @@
             // 
             this.outputLabel.AutoSize = true;
             this.outputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputLabel.Location = new System.Drawing.Point(2, 111);
+            this.outputLabel.Location = new System.Drawing.Point(0, 109);
             this.outputLabel.Name = "outputLabel";
             this.outputLabel.Size = new System.Drawing.Size(49, 18);
             this.outputLabel.TabIndex = 3;
@@ -128,11 +128,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.valueBox);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.Text = "ScaleCalc";
-            this.TopMost = true;
+            this.Text = "ScaleCalculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

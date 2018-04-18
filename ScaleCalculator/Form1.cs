@@ -12,8 +12,8 @@ namespace ScaleCalculator
 {
     public partial class Form1 : Form
     {
-        int value = 0;
-        int scaleInt = 0;
+        int value;
+        int scaleInt;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -51,7 +51,7 @@ namespace ScaleCalculator
             update();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
