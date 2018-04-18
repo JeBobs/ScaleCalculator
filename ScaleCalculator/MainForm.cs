@@ -12,6 +12,7 @@ namespace ScaleCalculator
 {
     public partial class MainForm : Form
     {
+        public string errorText = "Failed to parse, is the value an integer?";
         public MainForm()
         {
             InitializeComponent();
@@ -20,6 +21,7 @@ namespace ScaleCalculator
         private void MainForm_Load(object sender, EventArgs e)
         {
             comboBox1.SelectedIndex = 1;
+            outputLabel.Text = "Let's get to calculating.";
         }
 
         private void valueBox_TextChanged(object sender, EventArgs e)
@@ -41,13 +43,16 @@ namespace ScaleCalculator
             }
             else
             {
-                outputLabel.Text = "Failed to parse, is the value an integer?";
+                outputLabel.Text = errorText;
             }
         }
 
         private void outputLabel_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(outputLabel.Text);
+            if  (outputLabel.Text != errorText)
+            {
+                Clipboard.SetText(outputLabel.Text);
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
