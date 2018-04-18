@@ -1,13 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ScaleCalculator
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        private void Form1_Load(object sender, EventArgs e)
+        public MainForm()
         {
-            //comboBox1.SelectedIndex = 1;
+            InitializeComponent();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            comboBox1.SelectedIndex = 1;
         }
 
         private void valueBox_TextChanged(object sender, EventArgs e)
@@ -15,16 +27,16 @@ namespace ScaleCalculator
             update();
         }
 
-        void update ()
+        void update()
         {
-            int value;
-            int scaleInt;
+            float value;
+            float scaleFloat;
             string scaleString = comboBox1.SelectedItem.ToString();
-            Int32.TryParse(scaleString, out scaleInt);
-            if (Int32.TryParse(valueBox.Text, out value))
+            float.TryParse(scaleString, out scaleFloat);
+            if (float.TryParse(valueBox.Text, out value))
             {
-                int outputInt = value * scaleInt;
-                string outputString = outputInt.ToString();
+                float outputFloat = value * scaleFloat;
+                string outputString = outputFloat.ToString();
                 outputLabel.Text = outputString;
             }
             else

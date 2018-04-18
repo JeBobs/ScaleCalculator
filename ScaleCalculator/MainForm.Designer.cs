@@ -1,6 +1,6 @@
 ﻿namespace ScaleCalculator
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -19,14 +19,7 @@
             }
             base.Dispose(disposing);
         }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
+        void InitializeComponent()
         {
             this.valueBox = new System.Windows.Forms.TextBox();
             this.outputLabel = new System.Windows.Forms.Label();
@@ -131,14 +124,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "ScaleCalculator";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
-
-        #endregion
-
         private System.Windows.Forms.TextBox valueBox;
         private System.Windows.Forms.Label outputLabel;
         private System.Windows.Forms.Label label2;
@@ -147,5 +137,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
     }
-}
+    #region Windows Form Designer generated code
 
+    /// <summary>
+    /// Required method for Designer support - do not modify
+    /// the contents of this method with the code editor.
+    /// </summary>
+
+        #endregion
+    }
