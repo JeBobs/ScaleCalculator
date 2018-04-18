@@ -41,20 +41,6 @@ namespace ScaleCalculator
             }
         }
 
-        private void scaleBox_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void outputLabel_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(outputLabel.Text);
@@ -63,11 +49,6 @@ namespace ScaleCalculator
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             update();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
